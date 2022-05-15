@@ -8,6 +8,7 @@ html body {
 }
 .wrapper {
 	min-height: 100%;
+	min-width: 359px;
 	margin: 0 auto;
 	font-family: "Yanone Kaffeesatz";
 	color: white;
@@ -120,8 +121,8 @@ html body {
 }
 
 .dropdown {
-	overflow: hidden;
-	font-size: 0px;
+	
+	font-size: 24px;
 	width: 0%;
 	padding-left: 0;
 	padding-right: 0;
@@ -129,6 +130,8 @@ html body {
 	background: center no-repeat url(../img/menu.svg), #6E6702;
 	position: relative;
 	background-size: 24px;
+	transition-delay: 0.3s, 0s;
+	transition-property: all, color;
 }
 
 .dropdown-content {
@@ -377,7 +380,7 @@ img {
 
 @media (max-width: 520px) {
 	.header {
-	  	padding: 0px 10px;
+	  	padding: 0px 8px;
 	}
 
 	.main_link {
