@@ -26,60 +26,78 @@
 			</div>
 		</header>
 		<main>
-			<nav class="nav_bar">
-				<div class="nav_list">
-					<a href="#home" class="nav_link_home"></a>
-					<a href="#about" class="nav_link">Про нас</a>
-					<a href="#equipment" class="nav_link">Обладнання</a>
-					<a href="#services" class="nav_link">Послуги</a>
-					<a href="#contacts" class="nav_link">Контакты</a>
-				</div>	
-			</nav>
-			<section class="about" id="about">
+			<div class="nav_bar">
+					<a href="#home" class="nav_link nav_link_home"></a>
+					<a href="#about" class="nav_link main_link">Про нас</a>
+					<a href="#equipment" class="nav_link main_link">Обладнання</a>
+					<a href="#services" class="nav_link main_link">Послуги</a>
+					<a href="#contacts" class="nav_link main_link">Контакты</a>
+				<div class="dropdown nav_link">
+					<div class="dropdown-content">
+						<a href="#about" class="nav_link dropdown_link">Про нас</a>
+						<a href="#equipment" class="nav_link dropdown_link">Обладнання</a>
+						<a href="#services" class="nav_link dropdown_link">Послуги</a>
+						<a href="#contacts" class="nav_link dropdown_link">Контакты</a>
+					</div>
+				</div>
+			</div>
+			<section class="about">
+				<div class="section_link" id="about"></div>
 				<div class="section_header_container">
 					<h1 class="section_header">Про нас</h1>
 				</div>
-				<div class="section_info_container">
-					<div class="about_text">
-					</div>
-					<div class="default_img_container about_img">
-						<img src="img/drone_1.jpg" alt="дрон" width="1200" height="900">
+				<div class="section_info_wrapper">
+					<div class="section_info_container">
+						<div class="about_text">
+						</div>
+						<div class="default_img_container about_img">
+							<img src="img/drone_1.jpg" alt="дрон" width="1200" height="900">
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="equipment" id="equipment">
+			<section class="equipment">
+				<div class="section_link" id="equipment"></div>
 				<div class="section_header_container">
 					<h1 class="section_header">Обладнання</h1>
 				</div>
-				<div class="section_info_container">
-					<div class="default_img_container equipment_img">
-						<img src="img/drone_2.jpg" alt="дрон" width="1200" height="900">
-					</div>
-					<div class="equipment_text">		
+				<div class="section_info_wrapper">
+					<div class="section_info_container">
+						<div class="default_img_container equipment_img">
+							<img src="img/drone_2.jpg" alt="дрон" width="1200" height="900">
+						</div>
+						<div class="equipment_text">		
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="services" id="services">
+			<section class="services">
+				<div class="section_link" id="services"></div>
 				<div class="section_header_container">
 					<h1 class="section_header">Послуги</h1>
 				</div>
-				<div class="section_info_container">
-					<div class="services_text">	
-					</div>
-					<div class="default_img_container services_img">
-						<img src="img/drone_3.jpg" alt="дрон" width="1200" height="900">
+				<div class="section_info_wrapper">
+					<div class="section_info_container">
+						<div class="services_text">	
+						</div>
+						<div class="default_img_container services_img">
+							<img src="img/drone_3.jpg" alt="дрон" width="1200" height="900">
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="contacts" id="contacts">
+			<section class="contacts">
+				<div class="section_link" id="contacts"></div>
 				<div class="section_header_container">
 					<h1 class="section_header">Контакти</h1>
 				</div>
-				<div class="section_info_container">
-					<div class="default_img_container contacts_img">
-						<img src="img/drone_4.jpg" alt="дрон" width="1200" height="900">
-					</div>
-					<div class="contacts_text">		
+				<div class="section_info_wrapper">
+					<div class="section_info_container">
+						<div class="default_img_container contacts_img">
+							<img src="img/drone_4.jpg" alt="дрон" width="1200" height="900">
+						</div>
+						<div class="contacts_text">		
+						</div>
 					</div>
 				</div>
 			</section>
