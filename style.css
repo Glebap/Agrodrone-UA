@@ -1,0 +1,235 @@
+@import "null.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;400;700&display=swap');
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto;
+	font-family: "Yanone Kaffeesatz";
+}
+
+.header {
+	height: 200px;
+	text-align: center;
+	background: #C05805;
+	color: white;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-between;
+  	align-items: center;
+  	padding: 0px 80px;
+}
+
+.logo_container {
+	min-height: 100%;
+	background: left / 160px no-repeat url(../img/logo_white.svg);
+	padding-left: 150px;
+	display: flex;
+	align-items: center;
+}
+
+.logo_header {
+	font-weight: 700;
+	font-size: 72px;
+
+}
+
+.logo_text {
+	font-size: 22px;
+
+}
+
+.footer_logo {
+	background-size: 80px;
+	padding-left: 75px;
+}
+
+.footer_logo_header {
+	font-size: 36px;
+}
+
+.footer_logo_text {
+	font-size: 11px;
+}
+.header_contacts_container {
+	height: 100%;
+	background: left / 55px no-repeat url(../img/mobile.svg);
+	padding-left: 60px;
+	display: flex;
+	align-items: center;
+
+}
+
+.logo_header::after {
+	content: "";
+	display: block;
+	height: 10px;
+	width: 100;
+	margin-bottom: 3px;
+	background-image:
+    linear-gradient(
+      #0082D1 50%,
+      #FFD100 50%
+    );
+}
+
+.footer_logo_header::after {
+	height: 5px;
+}
+
+.nav_bar{
+	height: 50px;
+	text-align: center;
+	background: #2E2300;
+	color: white;
+	font-size: 24px;
+	position: sticky;
+	top: 0;
+    z-index: 10;
+}
+
+.nav_list{
+	height: 100%;
+	display: flex;
+	position: sticky;
+	align-items: center;
+	overflow: hidden;
+}
+
+.nav_list a{
+	background-color: #6E6702;
+	display: block;
+	margin: 0px 1px; 
+	text-align: center;  
+	padding: 30px 20px;  
+	text-decoration: none;
+	line-height: 1;
+	transition-duration: 0.2s; 
+}
+
+.nav_list a:hover {
+	background-color: #FFBB00
+}
+.nav_link_home{
+	width: 75px;
+	background: center no-repeat url(../img/home.svg);
+	background-size: 24px;
+}
+
+.nav_link{
+	width: 150px;
+}
+
+.wrapper section{
+	min-height: 500px;
+	padding: 50px 80px 80px 80px;
+	position: relative;
+}
+
+section.about, .about_img::before, .about_img::after{
+	background: #DB9501;
+}
+
+section.equipment, .equipment_img::before, .equipment_img::after{
+	background: #3F681C;
+}
+
+section.services, .services_img::before, .services_img::after{
+	background: #CF3721;
+}
+
+section.contacts, .contacts_img::before, .contacts_img::after{
+	background: #258039;
+}
+
+.default_img_container{
+	width: 480px;
+	height: 360px;
+	border: 5px solid #FFD100;
+  	outline: 5px solid #0082D1;
+  	padding: 7px;
+  	position: relative;
+}
+
+img {
+	position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 5;
+}
+
+.default_img_container::before{
+	content: "";
+    width: 240px;
+    height: 240px;
+    top: -10px;
+    left: -10px;
+    position: absolute;
+}
+
+.default_img_container::after{
+	content: "";
+    width: 240px;
+    height: 240px;
+    top: 120px;
+    left: 240px;
+    position: absolute;
+}
+
+.section_header_container {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.section_header {
+	display: inline-block;
+	position: relative;
+	font-weight: 700;
+	font-size: 64px;
+	color: white;
+	text-align: center;
+}
+
+.section_header::before {
+	content:'';
+	background: url('../img/dron_dec_white.svg') no-repeat; /*url of image*/
+	height: 35px; /*height of image*/
+	width: 35px;  /*width of image*/
+	position: absolute;
+	left: -45px;
+	top: 15px;
+	transition-duration: 0.2s;
+}
+
+.section_header::after {
+	content:'';
+	background: url('../img/dron_dec_white.svg'); /*url of image*/
+	height: 35px; /*height of image*/
+	width: 35px;  /*width of image*/
+	position: absolute;
+	right: -45px;
+	top: 15px;
+	transition-duration: 0.3s;
+}
+
+.section_header:hover::after {
+	transform: rotate(180deg);
+}
+
+.section_header:hover::before {
+	transform: rotate(-180deg);
+}
+
+.section_info_container {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.footer {
+	color: white;
+	background-color: #C05805;
+	height: 100px;
+}
