@@ -163,7 +163,6 @@ html body {
 }
 
 .wrapper section{
-	min-height: 500px;
 	padding: 50px 80px 80px 80px;
 	position: relative;
 	transition: all 0.2s ease-in-out;
@@ -184,6 +183,79 @@ html body {
 	width: 1200px;
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
+}
+
+.text_container {
+	padding: 16px;
+	max-width: 500px;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  	align-items: center;
+  	gap: 40px;
+}
+
+.location_container, .contacts_text_container, .text_container > p {
+	font-size: 42px;
+	word-spacing: 8px;
+}
+
+.text_list > li {
+	font-size: 32px;
+	background: url(../img/dron_dec_white.svg) 0 0 no-repeat;
+	background-size: 35px;
+	padding-left: 50px;
+}
+
+.text_list > li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.list_text {
+	padding-left: 20px;
+	margin-top: 10px;
+	font-size: 28px;
+}
+
+.location_text {
+	font-size: 48px;
+	word-spacing: 8px;
+	text-align: center;
+}
+
+.ps {
+	font-size: 28px;
+	text-align: center;
+}
+
+.location_container {
+	width: 100%;
+	position: relative;
+}
+
+.location_container::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/location-pin.svg);
+	width: 50px;
+	height: 50px;
+}
+.contacts_text_container {
+	width: 100%;
+}
+
+.contacts_text_container::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/mobile.svg);
+	width: 50px;
+	height: 50px;
+}
+
+.contacts {
+	text-align: center;
 }
 
 section.about, .about_img::before, .about_img::after{
@@ -199,7 +271,7 @@ section.services, .services_img::before, .services_img::after{
 }
 
 section.contacts, .contacts_img::before, .contacts_img::after{
-	background: #258039;
+	background: #7D5E3C;
 }
 
 .default_img_container{
@@ -291,6 +363,16 @@ img {
 	padding: 0 20px;
 }
 
+@media (max-width: 1160px) {
+	.section_info_container {
+		max-width: 1200px;
+		flex-direction: column;
+		align-items: center;
+    	justify-content: center;
+	}
+}
+
+
 @media (max-width: 786px) {
 	.header {
 	  	padding: 0px 20px;
@@ -341,7 +423,7 @@ img {
 	padding-left: 0px;
 	}
 
-	.contacts_text_container {
+	.header_contacts_text_container {
 		min-width: 122px;
 		max-width: 100%;
 		background: center / 45px no-repeat url(../img/mobile.svg);
