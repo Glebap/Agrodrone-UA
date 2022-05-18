@@ -23,9 +23,9 @@ html body {
 	display: flex;
 	column-gap: 10px;
 	justify-content: space-between;
-  	align-items: center;
-  	padding: 0px 80px;
-  	transition: all 0.2s ease-in-out;
+	align-items: center;
+	padding: 0px 80px;
+	transition: all 0.2s ease-in-out;
 }
 
 .logo_container {
@@ -74,10 +74,10 @@ html body {
 	width: 100;
 	margin-bottom: 3px;
 	background-image:
-    linear-gradient(
-      #0082D1 50%,
-      #FFD100 50%
-    );
+	linear-gradient(
+	  #0082D1 50%,
+	  #FFD100 50%
+	);
 }
 
 .footer_logo_header::after {
@@ -92,20 +92,20 @@ html body {
 	margin: 0px 1px 0px 2px; 
 }
 
-.nav_bar a:hover, .dropdown:hover, .dropbtn:hover {
+.nav_bar a:hover, .dropdown:hover{
 	background-color: #FFBB00
 }
 
 .nav_bar {
-  	max-height: 50px;
+	max-height: 50px;
 	background: #2E2300;
 	position: sticky;
 	top: 0;
-    z-index: 10;
+	z-index: 10;
 	display: flex;
 }
 
-.nav_link , .dropdown{
+.nav_link, .dropdown{
 	background-color: #6E6702;
 	display: block;
 	margin: 0px 1px;
@@ -114,24 +114,32 @@ html body {
 	text-decoration: none;
 	line-height: 1;
 	white-space: nowrap;
-	transition: all 0.3s ease-in-out, background-color 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 	font-size: 24px;
 	width: 150px;
 	line-height: 50px;
 }
 
-.dropdown {
-	
+.dropdown{
 	font-size: 24px;
 	width: 0%;
 	padding-left: 0;
 	padding-right: 0;
-	margin: 0 0;
+	margin: 0;
 	background: center no-repeat url(../img/menu.svg), #6E6702;
+	display: inline-block;
 	position: relative;
 	background-size: 24px;
-	transition-delay: 0.3s, 0s;
-	transition-property: all, color;
+}
+
+.dropbtn {
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
 }
 
 .dropdown-content {
@@ -157,10 +165,7 @@ html body {
 	background-size: 24px;
 }
 
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
+.show {display:block;}
 
 .wrapper section{
 	padding: 50px 80px 80px 80px;
@@ -170,7 +175,7 @@ html body {
 
 .section_link {
 	position: absolute;
-	top: -50px;
+	top: -49px;
 }
 
 .section_info_wrapper {
@@ -193,8 +198,8 @@ html body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  	align-items: center;
-  	gap: 40px;
+	align-items: center;
+	gap: 40px;
 }
 
 .location_container, .contacts_text_container, .text_container > p {
@@ -278,9 +283,9 @@ section.contacts, .contacts_img::before, .contacts_img::after{
 	max-width: 480px;
 	max-height: 360px;
 	border: 5px solid #FFD100;
-  	outline: 5px solid #0082D1;
-  	padding: 7px;
-  	position: relative;
+	outline: 5px solid #0082D1;
+	padding: 7px;
+	position: relative;
 }
 
 img {
@@ -293,20 +298,20 @@ img {
 
 .default_img_container::before{
 	content: "";
-    width: 50%;
-    height: 75%;
-    top: -10px;
-    left: -10px;
-    position: absolute;
+	width: 50%;
+	height: 75%;
+	top: -10px;
+	left: -10px;
+	position: absolute;
 }
 
 .default_img_container::after{
 	content: "";
-    width: 50%;
-    height: 75%;
-    bottom: -10px;
-    right: -10px;
-    position: absolute;
+	width: 50%;
+	height: 75%;
+	bottom: -10px;
+	right: -10px;
+	position: absolute;
 }
 
 .section_header_container {
@@ -368,14 +373,14 @@ img {
 		max-width: 1200px;
 		flex-direction: column;
 		align-items: center;
-    	justify-content: center;
+		justify-content: center;
 	}
 }
 
 
 @media (max-width: 786px) {
 	.header {
-	  	padding: 0px 20px;
+		padding: 0px 20px;
 	}
 
 	.logo_container {
@@ -406,7 +411,7 @@ img {
 		margin-bottom: 3px;
 		margin-top: 10px;
 		background-image:
-	    linear-gradient(#0082D1 50%, #FFD100 50%);
+		linear-gradient(#0082D1 50%, #FFD100 50%);
 	}
 
 	.logo_container {
@@ -462,7 +467,7 @@ img {
 
 @media (max-width: 520px) {
 	.header {
-	  	padding: 0px 8px;
+		padding: 0px 8px;
 	}
 
 	.main_link {
