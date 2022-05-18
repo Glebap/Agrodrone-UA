@@ -32,7 +32,8 @@
 					<a href="#services" class="nav_link main_link">Послуги</a>
 					<a href="#contacts" class="nav_link main_link">Контакты</a>
 				<div class="dropdown nav_link">
-					<div class="dropdown-content">
+					<button class="dropbtn" onclick="openDropdown()"></button>
+					<div class="dropdown-content" id="dropContent">
 						<a href="#about" class="nav_link dropdown_link">Про нас</a>
 						<a href="#equipment" class="nav_link dropdown_link">Обладнання</a>
 						<a href="#services" class="nav_link dropdown_link">Послуги</a>
@@ -152,5 +153,23 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+	function openDropdown() {
+  		document.getElementById("dropContent").classList.toggle("show");
+	}
+
+	window.onclick = function(event) {
+  		if (!event.target.matches('.dropbtn')) {
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+      			var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        			openDropdown.classList.remove('show');
+	      		}
+	    	}
+	  	}
+	}
+	</script>
 </body>
 </html>
